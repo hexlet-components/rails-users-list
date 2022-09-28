@@ -1,0 +1,23 @@
+- # https://guides.rubyonrails.org/form_helpers.html
+= form_with model: user do |form|
+  = form.label :first_name
+  br
+  = user.errors.full_messages_for(:first_name).join(' ') if user.errors.present?
+  = form.text_field :first_name
+  br
+  = form.label :last_name
+  br
+  = user.errors.full_messages_for(:last_name).join(' ') if user.errors.present?
+  = form.text_area :last_name
+  br
+  = form.label :phone
+  br
+  = user.errors.full_messages_for(:phone).join(' ') if user.errors.present?
+  = form.text_field :phone
+  br
+  = form.label :email
+  br
+  = user.errors.full_messages_for(:email).join(' ') if user.errors.present?
+  = form.text_field :email
+  br
+  = form.submit
