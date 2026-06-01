@@ -1,8 +1,5 @@
 setup:
-	bin/setup
-	bin/rails db:drop
-	bin/rails db:migrate
-	bin/rails db:seed
+	bin/setup --skip-server
 
 start:
 	bin/rails s -p 3000 -b "0.0.0.0"
