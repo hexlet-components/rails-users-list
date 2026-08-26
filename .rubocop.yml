@@ -1,12 +1,13 @@
+# Omakase Ruby styling for Rails: стиль, который Rails ставит по умолчанию.
+# Правила руками не выбираются и руками не правятся.
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+
+# inherit_mode у omakase сливает Exclude, а не заменяет его.
 AllCops:
-  NewCops: enable
-  SuggestExtensions: false
-
-Style/Documentation:
-  Enabled: false
-
-Gemspec/RequiredRubyVersion:
-  Enabled: false
-
-Metrics/MethodLength:
-  Enabled: false
+  Exclude:
+    - "db/*schema.rb"
+    - "db/migrate/**/*"
+    - "vendor/**/*"
+    - "node_modules/**/*"
+    - "tmp/**/*"
+    - "bin/**/*"
