@@ -12,7 +12,7 @@ make setup
 make start
 ```
 
-Run server on *localhost:3000*
+Run server on _localhost:3000_
 
 ---
 
