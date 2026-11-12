@@ -13,7 +13,7 @@ gem "propshaft"
 gem "puma"
 gem "rails", "~> 8.1"
 gem "slim-rails"
-gem "sqlite3", "~> 2.0"
+gem "sqlite3", "~> 2.10"
 gem "stimulus-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[windows jruby]
